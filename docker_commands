@@ -1,0 +1,3 @@
+podman system prune --all --force
+podman image prune
+podmand build -f Dockerfile -t <imagename>
