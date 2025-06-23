@@ -1,3 +1,5 @@
 podman system prune --all --force
 podman image prune
-podmand build -f Dockerfile -t <imagename>
+podman build --format docker -f Dockerfile -t <imagename>  
+podman run -it -d --name hello vllm_image:latest bash 
+podman exec -it hello bash
