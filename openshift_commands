@@ -1,0 +1,3 @@
+ oc delete deployment my-vllm-app -n <projectname>
+ oc api-resources 
+ 
