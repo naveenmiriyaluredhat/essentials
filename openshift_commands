@@ -1,3 +1,5 @@
- oc delete deployment my-vllm-app -n <projectname>
- oc api-resources 
+oc delete deployment my-vllm-app -n <projectname>
+oc api-resources 
+oc apply -f deployment.yaml -n <your-project-name>
+oc exec -it deploy/my-vllm-app -- /bin/bash
  
