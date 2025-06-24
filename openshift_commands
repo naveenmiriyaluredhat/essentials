@@ -2,4 +2,7 @@ oc delete deployment my-vllm-app -n <projectname>
 oc api-resources 
 oc apply -f deployment.yaml -n <your-project-name>
 oc exec -it deploy/my-vllm-app -- /bin/bash
- 
+
+oc apply -f pvc.yaml -n <your-project-name>
+oc get pvc -n <your-project-name> # Verify it's in 'Bound' status
+
