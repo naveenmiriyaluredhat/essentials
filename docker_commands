@@ -3,3 +3,5 @@ podman image prune
 podman build --format docker -f Dockerfile -t <imagename>  
 podman run -it -d --name hello vllm_image:latest bash 
 podman exec -it hello bash
+podman tag vllm_image:mlperf3 quay.io/rh-ee-nmiriyal/mlperf-5.1:mlperf
+podman commit container id and tag 
