@@ -6,3 +6,6 @@ oc exec -it deploy/my-vllm-app -- /bin/bash
 oc apply -f pvc.yaml -n <your-project-name>
 oc get pvc -n <your-project-name> # Verify it's in 'Bound' status
 
+#Helps with making /tmp place to store or cache within a container 
+#Used with aws s3 cp and pretty useful for other activites within a container 
+os.environ['HOME'] = '/tmp'
